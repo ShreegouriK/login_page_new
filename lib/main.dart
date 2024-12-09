@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_page_new/provider/provider.dart';
+import 'package:login_page_new/screens/bottomNavigatorPage.dart';
 import 'package:login_page_new/screens/homepage.dart';
 import 'package:login_page_new/screens/loginpage.dart';
 import 'package:provider/provider.dart';
@@ -54,6 +55,8 @@ class _SplashScreenState extends State<SplashScreen> {
           context,
           MaterialPageRoute(
             builder: (context) => Homepage(email:email, username: username, userId: userId,),
+            // builder: (context) => Bottomnavigatorpage(),
+
           ));
     } else {
       // Navigate to the LoginPage

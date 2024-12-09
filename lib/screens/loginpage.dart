@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_page_new/provider/provider.dart';
+import 'package:login_page_new/screens/bottomNavigatorPage.dart';
 import 'package:login_page_new/screens/homepage.dart';
 import 'package:login_page_new/services/api_services.dart';
 import 'package:provider/provider.dart';
@@ -74,6 +75,8 @@ class _LoginpageState extends State<Loginpage> {
                 child: const Text("OK"),
                 onPressed: () {
                   Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Homepage(email: email, username: username, userId: userId,)));
+
+                  // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Bottomnavigatorpage()));
                 },
               ),
             ],
